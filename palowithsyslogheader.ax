@@ -1,0 +1,41 @@
+[[extraction]]
+	name="Palo Alto SYSTEM"
+	desc="Palo Alto Version 8.1 SYSTEM feed autoextractor"
+	tag="syslog-palo-system"
+	module="csv"
+	params=",receive_time,serial,type,subtype,,time_generated,vsys,eventid,object,,,module,severity,opaque,seqno,actionflags,dg_hier_level_1,dg_hier_level_2,dg_hier_level_3,dg_hier_level_4,vsys_name,device_name"
+
+[[extraction]]
+	name="Palo Alto THREAT"
+	desc="Palo Alto Version 8.1 THREAT feed autoextractor"
+	tag="syslog-palo-threat"
+	module="csv"
+	params=",receive_time,serial,type,subtype,,time_generated,src,dst,natsrc,natdst,rule,srcuser,dstuser,app,vsys,from,to,inbound_if,outbound_if,logset,,sessionid,repeatcnt,sport,dport,natsport,natdport,flags,proto,action,misc,threatid,category,severity,direction,seqno,actionflags,srcloc,dstloc,,contenttype,pcap_id,filedigest,cloud,url_idx,user_agent,filetype,xff,referer,sender,subject,recipient,reportid,dg_hier_level_1,dg_hier_level_2,dg_hier_level_3,dg_hier_level_4,vsys_name,device_name,,src_uuid,dst_uuid,http_method,tunnel_id,monitortag,parent_session_id,parent_start_time,tunnel,thr_category,contentver,,assoc_id,ppid,http_headers"
+
+[[extraction]]
+	name="Palo Alto CONFIG"
+	desc="Palo Alto Version 8.1 CONFIG feed autoextractor"
+	tag="syslog-palo-config"
+	module="csv"
+	params=",receive_time,serial,type,subtype,,time_generated,host,vsys,cmd,admin,client,result,path,before_change_detail,after_change_detail,seqno,actionflags,dg_hier_level_1,dg_hier_level_2,dg_hier_level_3,dg_hier_level_4,vsys_name,device_name"
+
+[[extraction]]
+	name="Palo Alto TRAFFIC"
+	desc="Palo Alto Version 8.1 TRAFFIC feed autoextractor"
+	tag="syslog-palo-traffic"
+	module="csv"
+	params=",receive_time,serial,type,subtype,,time_generated,src,dst,natsrc,natdst,rule,srcuser,dstuser,app,vsys,from,to,inbound_if,outbound_if,logset,,sessionid,repeatcnt,sport,dport,natsport,natdport,flags,proto,action,bytes,bytes_sent,bytes_received,packets,start,sec,category,,seqno,actionflags,srcloc,dstloc,,pkts_sent,pkts_received,session_end_reason,dg_hier_level_1,dg_hier_level_2,dg_hier_level_3,dg_hier_level_4,vsys_name,device_name,action_source,src_uuid,dst_uuid,tunnel_id,monitortag,parent_session_id,parent_start_time,tunnel,assoc_id,chunks,chunks_sent,chunks_received"
+
+[[extraction]]
+	name="Palo Alto USERID"
+	desc="Palo Alto Version 8.1 USERID feed autoextractor"
+	tag="syslog-palo-userid"
+	module="csv"
+	params=",receive_time,serial,type,subtype,,time_generated,vsys,ip,user,datasourcename,eventid,repeatcnt,timeout,beginport,endport,datasource,datasourcetype,seqno,actionflags,dg_hier_level_1,dg_hier_level_2,dg_hier_level_3,dg_hier_level_4,vsys_name,device_name,vysy_id,factortype,factorcompletiontime,factorno,,,ugflags,userbysource"
+
+[[extraction]]
+	name="Palo Alto AUTHENTICATION"
+	desc="Palo Alto Version 8.1 AUTHENTICATION feed autoextractor"
+	tag="syslog-palo-authentication"
+	module="csv"
+	params=",receive_time,serial,type,subtype,,time_generated,vsys,ip,user,normalize_user,object,authpolicy,repeatcnt,authid,vendor,logset,serverprofile,desc,clienttype,event,factorno,seqno,actionflags,dg_hier_level_1,dg_hier_level_2,dg_hier_level_3,dg_hier_level_4,vsys_name,device_name,vysy_id,authproto"
